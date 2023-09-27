@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:idiary/home.dart';
+import 'package:idiary/pages/write_diary_page.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 part 'main.g.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const WriteDiaryPage(),
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
